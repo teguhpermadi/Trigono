@@ -3,7 +3,7 @@
 
 `MathView` is a third-party view library, which might help you display math formula on Android apps easier. Two rendering engines available: [MathJax] and [KaTeX]. Support Android version 4.1 (Jelly Bean) and newer. 
 
-<img src="screenshot/screenshot.png" width="250">
+<img src="Screenshot_2016-06-30-18-23-19.png" width="250">
 
 ## Setup
 
