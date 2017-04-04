@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.kexanie.mathviewtest">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splass"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bab1"
+            android:label="Ukuran Sudut"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bab2"
+            android:label="Konsep Dasar Sudut"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bab3"
+            android:label="Hubungan Derajat, Menit, dan Detik"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bab4"
+            android:label="Perbandingan Trigonometri Pada Segitiga Siku-Siku"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bab5"
+            android:label="Nilai Perbandingan Trigonometri Diberbagai Kuadran"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bab6"
+            android:label="Perbandingan Trigonometri Sudut-Sudut Istimewa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bab7"
+            android:label="Menggambar Grafik Fungsi Trigonometri"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".materi"
+            android:label="Materi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KompetensiInti"
+            android:label="Kompetensi Inti"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".beranda"
+            android:label="Trigonoid"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".profil"
+            android:label="Profil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.github.kexanie.quiz.QuizActivity"
+            android:label="Evaluasi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.github.kexanie.quiz.ResultActivity"
+            android:label="Hasil Evaluasi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.github.kexanie.quiz.ResultActivityBab"
+            android:label="Hasil Kuis Sub Bab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.github.kexanie.quiz.QuizBab1"
+            android:label="Kuis Sub Bab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.github.kexanie.quiz.QuizBab2"
+            android:label="Kuis Sub Bab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.github.kexanie.quiz.QuizBab3"
+            android:label="Kuis Sub Bab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.github.kexanie.quiz.QuizBab4"
+            android:label="Kuis Sub Bab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.github.kexanie.quiz.QuizBab5"
+            android:label="Kuis Sub Bab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.github.kexanie.quiz.QuizBab6"
+            android:label="Kuis Sub Bab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bantuan"
+            android:label="@string/title_activity_bantuan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".indikator"
+            android:label="Indikator Pembelajaran"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".tujuanpembelajaran"
+            android:label="@string/title_activity_tujuanpembelajaran"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pendahuluan"
+            android:label="@string/title_activity_pendahuluan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KompetensiDasar"
+            android:label="@string/title_activity_kompetensi_dasar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pengantar"
+            android:label="@string/title_activity_pengantar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".petakonsep"
+            android:label="@string/title_activity_petakonsep"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

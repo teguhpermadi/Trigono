@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+* Copyright (C) 2015 Qiujuer <qiujuer@live.cn>
+* WebSite http://www.qiujuer.net
+* Created 08/04/2015
+* Changed 12/15/2015
+* Version 3.0.0
+* Author Qiujuer
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*         http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+-->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="g_checkBox_borderSize">2dp</dimen>
+    <dimen name="g_checkBox_intervalSize">2dp</dimen>
+    <dimen name="g_checkBox_markSize">22dp</dimen>
+
+    <dimen name="g_editText_lineSize">1dp</dimen>
+    <dimen name="g_editText_lineSize_active_increment">0.5dp</dimen>
+    <dimen name="g_editText_hintTitleTextSize">12sp</dimen>
+    <dimen name="g_editText_paddingV">6dp</dimen>
+    <dimen name="g_editText_paddingH">12dp</dimen>
+
+    <dimen name="g_seekBar_tickSize">0dp</dimen>
+    <dimen name="g_seekBar_thumbSize">6dp</dimen>
+    <dimen name="g_seekBar_touchSize">12dp</dimen>
+    <dimen name="g_seekBar_trackStroke">2dp</dimen>
+    <dimen name="g_seekBar_scrubberStroke">4dp</dimen>
+
+    <dimen name="g_balloonMarker_elevation">4dp</dimen>
+    <dimen name="g_balloonMarker_textPadding">2dp</dimen>
+    <dimen name="g_balloonMarker_separation">16dp</dimen>
+
+    <dimen name="g_loading_lineSize">2dp</dimen>
+    <dimen name="g_loading_minSize">28dp</dimen>
+
+    <dimen name="g_button_background_corners_radius">4dp</dimen>
+    <dimen name="g_button_touch_corners_radius">4dp</dimen>
+
+    <dimen name="g_imageView_touch_corners_radius">4dp</dimen>
+
+
+    <dimen name="font_4">4sp</dimen>
+    <dimen name="font_6">6sp</dimen>
+    <dimen name="font_8">8sp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+    <dimen name="font_34">34sp</dimen>
+    <dimen name="font_45">45sp</dimen>
+    <dimen name="font_56">56sp</dimen>
+    <dimen name="font_112">112sp</dimen>
+
+    <dimen name="lay_2">2dp</dimen>
+    <dimen name="lay_4">4dp</dimen>
+    <dimen name="lay_8">8dp</dimen>
+    <dimen name="lay_12">12dp</dimen>
+    <dimen name="lay_14">14dp</dimen>
+    <dimen name="lay_16">16dp</dimen>
+    <dimen name="lay_20">20dp</dimen>
+    <dimen name="lay_24">24dp</dimen>
+    <dimen name="lay_28">28dp</dimen>
+    <dimen name="lay_32">32dp</dimen>
+    <dimen name="lay_36">36dp</dimen>
+    <dimen name="lay_40">40dp</dimen>
+    <dimen name="lay_44">44dp</dimen>
+    <dimen name="lay_48">48dp</dimen>
+    <dimen name="lay_52">52dp</dimen>
+    <dimen name="lay_56">56dp</dimen>
+    <dimen name="lay_60">60dp</dimen>
+    <dimen name="lay_64">64dp</dimen>
+    <dimen name="lay_68">68dp</dimen>
+    <dimen name="lay_72">72dp</dimen>
+    <dimen name="lay_76">76dp</dimen>
+    <dimen name="lay_80">80dp</dimen>
+    <dimen name="lay_84">84dp</dimen>
+    <dimen name="lay_88">88dp</dimen>
+    <dimen name="lay_92">92dp</dimen>
+    <dimen name="lay_96">96dp</dimen>
+
+    <dimen name="size_6">6dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_12">12dp</dimen>
+    <dimen name="size_14">14dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_28">28dp</dimen>
+    <dimen name="size_32">32dp</dimen>
+    <dimen name="size_36">36dp</dimen>
+    <dimen name="size_40">40dp</dimen>
+    <dimen name="size_44">44dp</dimen>
+    <dimen name="size_48">48dp</dimen>
+    <dimen name="size_52">52dp</dimen>
+    <dimen name="size_56">56dp</dimen>
+    <dimen name="size_60">60dp</dimen>
+    <dimen name="size_64">64dp</dimen>
+    <dimen name="size_68">68dp</dimen>
+    <dimen name="size_72">72dp</dimen>
+    <dimen name="size_76">76dp</dimen>
+    <dimen name="size_80">80dp</dimen>
+    <dimen name="size_84">84dp</dimen>
+    <dimen name="size_88">88dp</dimen>
+    <dimen name="size_92">92dp</dimen>
+    <dimen name="size_96">96dp</dimen>
+    <dimen name="size_100">100dp</dimen>
+    <dimen name="size_116">116dp</dimen>
+    <dimen name="size_128">128dp</dimen>
+    <dimen name="size_156">156dp</dimen>
+    <dimen name="size_172">172dp</dimen>
+    <dimen name="size_224">224dp</dimen>
+    <dimen name="size_256">256dp</dimen>
+</resources>

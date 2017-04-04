@@ -1,0 +1,237 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x66d64baf, pid=3340, tid=1392
+#
+# JRE version: 7.0_13-b20
+# Java VM: Java HotSpot(TM) Client VM (23.7-b01 mixed mode windows-x86 )
+# Problematic frame:
+# V  [jvm.dll+0x64baf]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x02157c00):  VMThread [stack: 0x4a3b0000,0x4a400000] [id=1392]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x3229017c
+
+Registers:
+EAX=0x04238a90, EBX=0x00000024, ECX=0x32290170, EDX=0x00000001
+ESP=0x4a3ff454, EBP=0x4a3ff464, ESI=0x02074d98, EDI=0x04238a90
+EIP=0x66d64baf, EFLAGS=0x00010293
+
+Top of Stack: (sp=0x4a3ff454)
+0x4a3ff454:   4a3ff58c 0476c514 00000024 02074d98
+0x4a3ff464:   4a3ff47c 66d9ea2d 04238a90 0476d348
+0x4a3ff474:   0476c498 4a3ff58c 4a3ff49c 66d73093
+0x4a3ff484:   0476c524 4a3ff58c 02074d98 4a3ff58c
+0x4a3ff494:   00000000 020757f0 4a3ff4b0 66d640dd
+0x4a3ff4a4:   4a3ff58c 020723c8 00000000 4a3ff4c4
+0x4a3ff4b4:   66d69e6c 4a3ff58c 020723c8 4a3ff54c
+0x4a3ff4c4:   4a3ff5bc 66d64507 00000000 4a3ff58c 
+
+Instructions: (pc=0x66d64baf)
+0x66d64b8f:   5f 5e 5b 5d c2 04 00 cc cc cc cc cc cc cc cc cc
+0x66d64b9f:   cc 55 8b ec 51 53 56 57 8b 7d 08 8b f1 8b 4f 04
+0x66d64baf:   8b 41 0c 83 c1 08 89 75 fc 85 c0 7e 09 a8 01 75
+0x66d64bbf:   30 c1 f8 02 eb 33 79 29 8b 5f 08 8b 15 5c ae ff 
+
+
+Register to memory mapping:
+
+EAX=0x04238a90 is an oop
+[Ljava.lang.Object; 
+ - klass: 'java/lang/Object'[]
+ - length: 2
+EBX=0x00000024 is an unknown value
+ECX=0x32290170 is an unallocated location in the heap
+EDX=0x00000001 is an unknown value
+ESP=0x4a3ff454 is an unknown value
+EBP=0x4a3ff464 is an unknown value
+ESI=0x02074d98 is an unknown value
+EDI=0x04238a90 is an oop
+[Ljava.lang.Object; 
+ - klass: 'java/lang/Object'[]
+ - length: 2
+
+
+Stack: [0x4a3b0000,0x4a400000],  sp=0x4a3ff454,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x64baf]
+V  [jvm.dll+0x9ea2d]
+V  [jvm.dll+0x73093]
+V  [jvm.dll+0x640dd]
+V  [jvm.dll+0x69e6c]
+V  [jvm.dll+0x64507]
+V  [jvm.dll+0x6ae72]
+V  [jvm.dll+0x624b3]
+V  [jvm.dll+0x177326]
+V  [jvm.dll+0x14f475]
+V  [jvm.dll+0x14e5de]
+V  [jvm.dll+0x14e967]
+V  [jvm.dll+0x14ee32]
+V  [jvm.dll+0x17ee89]
+C  [msvcr100.dll+0x5c6de]  endthreadex+0x3a
+C  [msvcr100.dll+0x5c788]  endthreadex+0xe4
+C  [KERNEL32.DLL+0x1866]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x368f1]  LdrInitializeThunk+0x1a3
+C  [ntdll.dll+0x3689d]  LdrInitializeThunk+0x14f
+
+VM_Operation (0x0120f408): GenCollectForAllocation, mode: safepoint, requested by thread 0x0221b800
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x4a4f3800 JavaThread "Service Thread" daemon [_thread_blocked, id=3540, stack(0x4a790000,0x4a7e0000)]
+  0x4a4dfc00 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=4016, stack(0x4a740000,0x4a790000)]
+  0x4a4de800 JavaThread "Attach Listener" daemon [_thread_blocked, id=3776, stack(0x4a6f0000,0x4a740000)]
+  0x4a4dc400 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=3840, stack(0x4a6a0000,0x4a6f0000)]
+  0x02166400 JavaThread "Finalizer" daemon [_thread_blocked, id=3976, stack(0x4a450000,0x4a4a0000)]
+  0x02161400 JavaThread "Reference Handler" daemon [_thread_blocked, id=2724, stack(0x4a400000,0x4a450000)]
+  0x0221b800 JavaThread "main" [_thread_blocked, id=300, stack(0x011c0000,0x01210000)]
+
+Other Threads:
+=>0x02157c00 VMThread [stack: 0x4a3b0000,0x4a400000] [id=1392]
+  0x4a507000 WatcherThread [stack: 0x4a7e0000,0x4a830000] [id=2420]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0221a288] Threads_lock - owner thread: 0x02157c00
+[0x0221add0] Heap_lock - owner thread: 0x0221b800
+
+Heap
+ def new generation   total 4928K, used 4387K [0x04220000, 0x04770000, 0x19770000)
+  eden space 4416K,  99% used [0x04220000, 0x04668df8, 0x04670000)
+  from space 512K,   0% used [0x04670000, 0x04670000, 0x046f0000)
+  to   space 512K, 100% used [0x046f0000, 0x04770000, 0x04770000)
+ tenured generation   total 10944K, used 645K [0x19770000, 0x1a220000, 0x44220000)
+   the space 10944K,   5% used [0x19770000, 0x19811520, 0x19811600, 0x1a220000)
+ compacting perm gen  total 12288K, used 2312K [0x44220000, 0x44e20000, 0x48220000)
+   the space 12288K,  18% used [0x44220000, 0x444622a0, 0x44462400, 0x44e20000)
+No shared spaces configured.
+
+Card table byte_map: [0x4a020000,0x4a250000] byte_map_base: 0x49ffef00
+
+Polling page: 0x01090000
+
+Code Cache  [0x02220000, 0x022b8000, 0x04220000)
+ total_blobs=166 nmethods=20 adapters=82 free_code_cache=32162Kb largest_free_block=32934400
+
+Compilation events (10 events):
+Event: 0.305 Thread 0x4a4dfc00   16             sun.net.www.ParseUtil::encodePath (336 bytes)
+Event: 0.307 Thread 0x4a4dfc00 nmethod 16 0x022b42c8 code [0x022b4470, 0x022b4b18]
+Event: 0.308 Thread 0x4a4dfc00   17             java.lang.String::length (6 bytes)
+Event: 0.309 Thread 0x4a4dfc00 nmethod 17 0x022b5188 code [0x022b5280, 0x022b5310]
+Event: 0.314 Thread 0x4a4dfc00   18             java.lang.String::startsWith (72 bytes)
+Event: 0.315 Thread 0x4a4dfc00 nmethod 18 0x022b5388 code [0x022b5490, 0x022b55d0]
+Event: 0.339 Thread 0x4a4dfc00   19             java.lang.Math::min (11 bytes)
+Event: 0.340 Thread 0x4a4dfc00 nmethod 19 0x022b5788 code [0x022b5880, 0x022b58f0]
+Event: 0.407 Thread 0x4a4dfc00   20             java.io.Win32FileSystem::normalize (143 bytes)
+Event: 0.408 Thread 0x4a4dfc00 nmethod 20 0x022b6ec8 code [0x022b7010, 0x022b72ac]
+
+GC Heap History (1 events):
+Event: 0.440 GC heap before
+{Heap before GC invocations=0 (full 0):
+ def new generation   total 4928K, used 4387K [0x04220000, 0x04770000, 0x19770000)
+  eden space 4416K,  99% used [0x04220000, 0x04668df8, 0x04670000)
+  from space 512K,   0% used [0x04670000, 0x04670000, 0x046f0000)
+  to   space 512K,   0% used [0x046f0000, 0x046f0000, 0x04770000)
+ tenured generation   total 10944K, used 0K [0x19770000, 0x1a220000, 0x44220000)
+   the space 10944K,   0% used [0x19770000, 0x19770000, 0x19770200, 0x1a220000)
+ compacting perm gen  total 12288K, used 2312K [0x44220000, 0x44e20000, 0x48220000)
+   the space 12288K,  18% used [0x44220000, 0x444622a0, 0x44462400, 0x44e20000)
+No shared spaces configured.
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.333 Thread 0x0221b800 Threw 0x0431f950 at C:\jdk7u2_32P\jdk7u13_2932_new\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 0.335 Thread 0x0221b800 Threw 0x04324568 at C:\jdk7u2_32P\jdk7u13_2932_new\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 0.336 Thread 0x0221b800 Threw 0x04326370 at C:\jdk7u2_32P\jdk7u13_2932_new\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 0.337 Thread 0x0221b800 Threw 0x0432aa40 at C:\jdk7u2_32P\jdk7u13_2932_new\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 0.339 Thread 0x0221b800 Threw 0x0432eb18 at C:\jdk7u2_32P\jdk7u13_2932_new\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 0.341 Thread 0x0221b800 Threw 0x04333310 at C:\jdk7u2_32P\jdk7u13_2932_new\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 0.342 Thread 0x0221b800 Threw 0x04337540 at C:\jdk7u2_32P\jdk7u13_2932_new\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 0.354 Thread 0x0221b800 Threw 0x0433e8d0 at C:\jdk7u2_32P\jdk7u13_2932_new\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 0.356 Thread 0x0221b800 Threw 0x04343cb8 at C:\jdk7u2_32P\jdk7u13_2932_new\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 0.357 Thread 0x0221b800 Threw 0x04345ac0 at C:\jdk7u2_32P\jdk7u13_2932_new\hotspot\src\share\vm\prims\jvm.cpp:1166
+
+Events (10 events):
+Event: 0.398 loading class 0x4a568098 done
+Event: 0.398 loading class 0x4a58c958
+Event: 0.398 loading class 0x4a58c4f8
+Event: 0.398 loading class 0x4a58c3a8
+Event: 0.398 loading class 0x4a58c3a8 done
+Event: 0.398 loading class 0x4a58c4f8 done
+Event: 0.398 loading class 0x4a58c958 done
+Event: 0.399 loading class 0x4a58c108
+Event: 0.399 loading class 0x4a58c108 done
+Event: 0.440 Executing VM operation: GenCollectForAllocation
+
+
+Dynamic libraries:
+0x003b0000 - 0x003df000 	C:\Program Files\Java\jdk1.7.0_13\bin\java.exe
+0x770c0000 - 0x77227000 	C:\Windows\SYSTEM32\ntdll.dll
+0x765b0000 - 0x766a8000 	C:\Windows\system32\KERNEL32.DLL
+0x74990000 - 0x74a4d000 	C:\Windows\system32\KERNELBASE.dll
+0x70cd0000 - 0x70d77000 	C:\Windows\system32\apphelp.dll
+0x76eb0000 - 0x76f5e000 	C:\Windows\system32\ADVAPI32.dll
+0x76ac0000 - 0x76be1000 	C:\Windows\system32\USER32.dll
+0x72870000 - 0x72a67000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9200.16384_none_893961408605e985\COMCTL32.dll
+0x76890000 - 0x76941000 	C:\Windows\system32\msvcrt.dll
+0x76d90000 - 0x76dc4000 	C:\Windows\SYSTEM32\sechost.dll
+0x76950000 - 0x76a22000 	C:\Windows\system32\RPCRT4.dll
+0x76f60000 - 0x7706a000 	C:\Windows\system32\GDI32.dll
+0x76a90000 - 0x76abb000 	C:\Windows\system32\IMM32.DLL
+0x762a0000 - 0x7637c000 	C:\Windows\system32\MSCTF.dll
+0x69970000 - 0x69a2e000 	C:\Program Files\Java\jdk1.7.0_13\jre\bin\msvcr100.dll
+0x66d00000 - 0x6704d000 	C:\Program Files\Java\jdk1.7.0_13\jre\bin\client\jvm.dll
+0x70940000 - 0x70948000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x70610000 - 0x70631000 	C:\Windows\SYSTEM32\WINMM.dll
+0x76110000 - 0x76116000 	C:\Windows\system32\PSAPI.DLL
+0x77070000 - 0x770c0000 	C:\Windows\system32\WS2_32.dll
+0x705e0000 - 0x7060a000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x76120000 - 0x76128000 	C:\Windows\system32\NSI.dll
+0x726c0000 - 0x726cc000 	C:\Program Files\Java\jdk1.7.0_13\jre\bin\verify.dll
+0x6fc90000 - 0x6fcb0000 	C:\Program Files\Java\jdk1.7.0_13\jre\bin\java.dll
+0x6df40000 - 0x6df53000 	C:\Program Files\Java\jdk1.7.0_13\jre\bin\zip.dll
+0x6df20000 - 0x6df34000 	C:\Program Files\Java\jdk1.7.0_13\jre\bin\net.dll
+0x740c0000 - 0x7410a000 	C:\Windows\system32\mswsock.dll
+0x726b0000 - 0x726be000 	C:\Program Files\Java\jdk1.7.0_13\jre\bin\nio.dll
+0x64d30000 - 0x64e59000 	C:\Windows\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Xmx1024M -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant 
+java_command: com.android.dx.command.Main --dex --num-threads=4 --output D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\transforms\dex\debug\folders\1000\1f\main D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\pre-dexed\debug\io.github.kexanie.library-MathView-0.0.6_9a87b768ed5bbf249f42ddb8c8d6753d71a2482c.jar D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.1_a56e9dd4c90bf7079c075061d78cff57c1577e98.jar D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.2.1_cdd0d603a32ad752a2e04bdf5a30a432574fa9ca.jar D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.2.1_5f948b511fb1b62490a53494291d389a7ea9f4f7.jar D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.4.0_7695b39fa69e3e8273b86df64a382edd2c107cb5.jar D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_c50d753dd3b0e6b359e9e0a05522672cd6d27e0a.jar D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\pre-dexed\debug\debug_5f2833fbe7eff3bc78991562b76910297afb9645.jar D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\pre-dexed\debug\chunk-templates-3.0.1_4ab0c0148f12a27ddf80aa0cb52f699d47a104e7.jar D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.1_8ac28d52cf5907b582dba2c157753ee8024861fd.jar D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.2.1_11370321aaede61624424638aa0e83d72e25f463.jar D:\Bintang Media\project\Haidir\Trigonometri\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.2.1_d5436d8165abfcebf6d51d97037d0
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_13
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\
+USERNAME=Teguh Permadi
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 54 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 Build 9200 
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 54 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, tsc, tscinvbit
+
+Memory: 4k page, physical 2057068k(287824k free), swap 4154220k(1976768k free)
+
+vm_info: Java HotSpot(TM) Client VM (23.7-b01) for windows-x86 JRE (1.7.0_13-b20), built on Jan 30 2013 10:03:58 by "java_re" with unknown MS VC++:1600
+
+time: Wed Jun 29 11:41:27 2016
+elapsed time: 0 seconds
+

@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_quiz_bab4"
+    tools:context="io.github.kexanie.quiz.QuizBab4"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img1bab4"
+                android:adjustViewBounds="true"
+                android:maxWidth="700dp"
+                android:maxHeight="700dp"
+                android:scaleType="fitCenter"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img2bab4"
+                android:adjustViewBounds="true"
+                android:maxWidth="700dp"
+                android:maxHeight="700dp"
+                android:scaleType="fitCenter"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img3bab4"
+                android:adjustViewBounds="true"
+                android:maxWidth="700dp"
+                android:maxHeight="700dp"
+                android:scaleType="fitCenter"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img4bab4"
+                android:adjustViewBounds="true"
+                android:maxWidth="700dp"
+                android:maxHeight="700dp"
+                android:scaleType="fitCenter"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/soalbab4"
+                android:text="TextView"
+                android:textColor="@color/primary_text_material_dark"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_marginTop="10dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1bab4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.04"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/radio0bab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton"
+                    android:padding="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                <RadioButton
+                    android:id="@+id/radio1bab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton"
+                    android:padding="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                <RadioButton
+                    android:id="@+id/radio2bab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton"
+                    android:padding="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                <RadioButton
+                    android:id="@+id/radio3bab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton"
+                    android:padding="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

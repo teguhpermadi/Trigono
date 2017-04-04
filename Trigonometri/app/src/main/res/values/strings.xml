@@ -1,0 +1,42 @@
+<!--
+* Copyright (C) 2015 Qiujuer <qiujuer@live.cn>
+* WebSite http://www.qiujuer.net
+* Created 08/04/2015
+* Changed 12/15/2015
+* Version 3.0.0
+* Author Qiujuer
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*         http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+-->
+
+<resources>
+    <string name="g_font_file">@null</string>
+    <string name="app_name">Trigonoid</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_materi">Materi</string>
+    <string name="title_activity_kuis">kuis</string>
+    <string name="title_activity_beranda">Beranda</string>
+    <string name="title_activity_pendahuluan">Pendahuluan</string>
+    <string name="title_activity_profil">Profil</string>
+    <string name="title_activity_quiz_bab1">Quiz Bab1</string>
+    <string name="title_activity_bantuan">Bantuan</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_help">Bantuan</string>
+    <string name="title_activity_kikd">Kompetensi Inti dan Kompetensi Dasar</string>
+    <string name="title_activity_tujuanpembelajaran">Tujuan Pembelajaran</string>
+    <string name="title_activity_kompetensi_dasar">Kompetensi Dasar</string>
+    <string name="title_activity_pengantar">Pengantar</string>
+    <string name="text_intro">Pocket book interaktif merupakan bahan ajar yang dikemas dalam bentuk elektronik berbasis android yang berisikan rangkaian materi dan dilengkapi soal-soal interaktif, sebagai sarana belajar siswa untuk membantu memahami materi Trigonometri kelas X.</string>
+    <string name="title_activity_petakonsep">Peta Konsep</string>
+</resources>

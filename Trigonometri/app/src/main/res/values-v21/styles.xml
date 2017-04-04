@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="RatingBar">
+        <item name="android:colorControlNormal">@color/colorAccent</item>
+        <item name="android:colorControlActivated">@color/colorGrey</item>
+    </style>
+</resources>

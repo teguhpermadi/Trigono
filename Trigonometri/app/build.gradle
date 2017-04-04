@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'Trigonoid'
+            keyPassword 'trigonoid'
+            storeFile file('C:/Users/Teguh Permadi/trigonoid')
+            storePassword 'neverdie'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "io.github.kexanie.mathviewtest"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+def genius_version = "2.0.0-beta2"
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //    compile 'io.github.kexanie.library:MathView:0.0.4'
+    compile project(':MathView')
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    compile project(':library')
+}
